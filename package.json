@@ -1,5 +1,5 @@
 {
-  "name": "seek",
+  "name": "@seek/ui-error-builder",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~9.0.0-next.5",
     "@angular/common": "~9.0.0-next.5",

@@ -1,9 +1,30 @@
 {
   "name": "@seek/ui-error-builder",
   "version": "0.0.1",
+  "author": {
+    "name": "Guilherme Siquinelli",
+    "email": "guiseek@gmail.com",
+    "url": "https://guiseek.js.org/"
+  },
+  "description": "Angular Forms, Ui Error Builder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guiseek/ui-error-builder.git"
+  },
+  "homepage": "https://github.com/guiseek/ui-error-builder",
   "peerDependencies": {
     "@angular/common": "^9.0.0-next.12",
     "@angular/core": "^9.0.0-next.12",
     "tslib": "^1.10.0"
-  }
+  },
+  "keywords": [
+    "angular",
+    "forms",
+    "ui",
+    "dynamic",
+    "ngx",
+    "error",
+    "errors"
+  ],
+  "license": "MIT"
 }
