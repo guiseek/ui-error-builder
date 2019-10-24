@@ -29,9 +29,7 @@ export class ErrorBuilderDirective implements OnInit, OnDestroy {
       this.control.valueChanges
     ).subscribe((v) => {
       const controlErrors = this.control.errors;
-      if (controlErrors) {
-        this.message = this.getError(this.control.errors);
-      }
+      this.message = controlErrors ? this.getError(controlErrors) : '';
     });
   }
   getError(errors) {

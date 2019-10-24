@@ -19,13 +19,20 @@
       "dom"
     ],
     "paths": {
+      "@guiseek/ui-error-builder": [
+        "projects/ui-error-builder/src/public-api.ts"
+      ],
+      "@guiseek/ui-error-builder/*": [
+        "projects/ui-error-builder/*"
+      ],
       "ui-error-builder": [
         "dist/ui-error-builder"
       ],
       "ui-error-builder/*": [
         "dist/ui-error-builder/*"
       ]
-    }
+    },
+    "rootDir": "."
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
