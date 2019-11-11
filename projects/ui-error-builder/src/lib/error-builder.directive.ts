@@ -2,6 +2,7 @@ import { Directive, Input, OnInit, OnDestroy, Inject } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { ErrorMessages } from './interfaces/error-messages.interface';
 import { Subscription, merge } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 import { FORM_ERRORS } from './configs/form-errors.token';
 
 @Directive({
@@ -26,7 +27,10 @@ export class ErrorBuilderDirective implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.sub = merge(
-      this.control.valueChanges
+      this.control.valueChanges,
+      this.control.statusChanges
+    ).pipe(
+      debounceTime(600)
     ).subscribe((v) => {
       const controlErrors = this.control.errors;
       this.message = controlErrors ? this.getError(controlErrors) : '';
