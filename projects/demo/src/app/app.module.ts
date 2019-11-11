@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
-// import { UiErrorBuilderModule } from '@guiseek/ui-error-builder';
-import { UiErrorBuilderModule } from 'ui-error-builder';
+import { UiErrorBuilderModule } from '@guiseek/ui-error-builder';
 
 @NgModule({
   declarations: [
@@ -13,7 +12,16 @@ import { UiErrorBuilderModule } from 'ui-error-builder';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    UiErrorBuilderModule
+    UiErrorBuilderModule.forRoot({
+      validateUrl: (error) => {
+        console.log(error);
+        return `URL inválida`;
+      },
+      alreadyInUse: (error) => {
+        console.log(error);
+        return `O domínio ${error.value} já existe`;
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
