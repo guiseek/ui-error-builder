@@ -115,7 +115,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     !*** ../ui-error-builder/src/lib/configs/index.ts ***!
     \****************************************************/
 
-  /*! exports provided: FORM_ERRORS_CONFIG_TOKEN, FORM_ERRORS, FORM_ERRORS_CONFIG */
+  /*! exports provided: FORM_ERRORS_CONFIG, FORM_ERRORS_CONFIG_TOKEN, FORM_ERRORS */
 
   /***/
   function uiErrorBuilderSrcLibConfigsIndexTs(module, __webpack_exports__, __webpack_require__) {

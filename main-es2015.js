@@ -51,7 +51,7 @@ const FORM_ERRORS = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionTok
 /*!****************************************************!*\
   !*** ../ui-error-builder/src/lib/configs/index.ts ***!
   \****************************************************/
-/*! exports provided: FORM_ERRORS_CONFIG_TOKEN, FORM_ERRORS, FORM_ERRORS_CONFIG */
+/*! exports provided: FORM_ERRORS_CONFIG, FORM_ERRORS_CONFIG_TOKEN, FORM_ERRORS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
