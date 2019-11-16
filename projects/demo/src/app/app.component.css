@@ -16,15 +16,38 @@ h5,
 h6 {
   margin: 8px 0;
 }
-
+input {
+  padding: 8px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid #333;
+}
 p {
   margin: 0;
 }
-
+hr {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
 .spacer {
   flex: 1;
 }
-
+code {
+  font-size: 1.1rem;
+  /* font-weight: 800; */
+}
+.npm .npm,
+.yarn .yarn {
+  font-size: 1.6rem;
+}
+.npm .npm {
+  font-weight: 800;
+}
+.yarn .yarn {
+  font-weight: 800;
+}
 .toolbar {
   height: 60px;
   margin: -8px;
@@ -291,4 +314,20 @@ svg#clouds {
     display: none;
     visibility: hidden;
   }
+}
+
+.quickly-example {
+  width: 600px;
+  height: 100%;
+  max-height: 600px;
+  top: 64px;
+  right: 16px;
+  position: fixed;
+  z-index: 1;
+  -webkit-animation: slide-in-blurred-bottom 1.6s cubic-bezier(0.23, 1, 0.32, 1)
+    6s both;
+  animation: slide-in-blurred-bottom 1.6s cubic-bezier(0.23, 1, 0.32, 1) 6s both;
+}
+.quick.terminal {
+  width: 100%;
 }
